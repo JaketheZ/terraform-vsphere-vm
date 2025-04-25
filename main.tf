@@ -224,6 +224,7 @@ resource "vsphere_virtual_machine" "vm" {
           host_name    = var.staticvmname != null ? var.staticvmname : format("${var.vmname}${var.vmnameformat}", count.index + var.vmstartcount)
           domain       = var.domain
           hw_clock_utc = var.hw_clock_utc
+          script_text  = var.script_text
         }
       }
 

@@ -323,6 +323,12 @@ variable "hw_clock_utc" {
   default     = true
 }
 
+variable "script_text" {
+  deescription = "The customization script for the virtual machine that will be applied before and / or after guest customization."
+  type         = string
+  default      = null
+}
+
 variable "domain" {
   description = "default VM domain for linux guest customization and fqdn name (if fqdnvmname is true)."
   default     = "Development.com"
