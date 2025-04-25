@@ -324,7 +324,7 @@ variable "hw_clock_utc" {
 }
 
 variable "script_text" {
-  deescription = "The customization script for the virtual machine that will be applied before and / or after guest customization."
+  description = "The customization script for the virtual machine that will be applied before and / or after guest customization."
   type         = string
   default      = null
 }
