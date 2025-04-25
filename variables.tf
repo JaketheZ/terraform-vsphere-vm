@@ -326,14 +326,7 @@ variable "hw_clock_utc" {
 variable "script_text" {
   deescription = "The customization script for the virtual machine that will be applied before and / or after guest customization."
   type         = string
-  default      = <<EOF
-                  #!/bin/sh
-                  if [ x$1 = x"precustomization" ]; then
-                    echo "Do Precustomization tasks"
-                  elif [ x$1 = x"postcustomization" ]; then
-                    echo "Do Postcustomization tasks"
-                  fi
-                  EOF
+  default      = null
 }
 
 variable "domain" {
